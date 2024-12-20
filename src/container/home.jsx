@@ -10,7 +10,7 @@ import Swal from 'sweetalert2'
 const Home = () => {
 	const liffidG = `2006433189-Bb8W3M0d`
 	const lineidadmin = 'U451d817606a772eaa59b013572ad0b5f'
-	const urlAPI = 'https://gift2024-api.vercel.app'
+	const urlAPI = 'https://gift2024-api.vercel.app/api'
 	const isNotLogin = false
 	const [userState, setUserState] = useState(JSON.parse(JSON.stringify({ lineid: '', linename: '', linepic: '', linestatus: '', gifttolineid: '', status: '', ishas: false, userto: null })))
 	const [listUser, setListUser] = useState([])
