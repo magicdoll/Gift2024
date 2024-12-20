@@ -20,6 +20,7 @@
     "@fullcalendar/react": "^6.1.15",
     "@fullcalendar/timegrid": "^6.1.15",
     "@hookform/resolvers": "^3.9.0",
+    "@line/liff": "^2.25.1",
     "@mui/icons-material": "^5.16.7",
     "@mui/material": "^5.16.7",
     "@react-input/mask": "^1.2.5",

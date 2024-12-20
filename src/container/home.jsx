@@ -1,10 +1,35 @@
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
 import { Button, Card, Col, Dropdown, Pagination, ProgressBar, Row, Table } from "react-bootstrap";
 import ReactApexChart from "react-apexcharts";
 import { Link } from 'react-router-dom';
 import Imagesdata from '../components/common/imagesdata';
+import liff from '@line/liff'
+import axios from 'axios'
 
 const Home = () => {
+	const liffidG = '2006433189-Bb8W3M0d'
+	const isNotLogin = false
+
+	useEffect(() => {
+    fnInitLine()
+  }, [])
+
+	const fnInitLine = () => {
+    liff.init({ liffId: liffidG }, () => {
+      if (!liff.isLoggedIn() && !isNotLogin) {
+        liff.login()
+      }
+      else if (!isNotLogin) {
+        fnSetUserinfo()
+      }
+    })
+  }
+	const fnSetUserinfo = () => {
+    liff.getProfile().then(profile => {
+      console.log('profile', profile)
+    })
+  }
+
   return (
     <Fragment>
       <Row>
