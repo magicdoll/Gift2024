@@ -1,0 +1,54 @@
+@import "./assets/css/styles.css";
+@import "./assets/css/icons.css";
+
+//Packages Styles Imports
+
+@import "rodal/lib/rodal.css";
+
+@import 'suneditor/dist/css/suneditor.min.css';
+
+@import "react-color-palette/css";
+
+@import "react-datepicker/dist/react-datepicker.css";
+
+@import 'react-perfect-scrollbar/dist/css/styles.css';
+
+@import "react-range-slider-input/dist/style.css";
+
+@import 'react-phone-number-input/style.css';
+
+@import "simplebar-react/dist/simplebar.min.css";
+
+@import "gridjs/dist/theme/mermaid.css";
+
+@import "react-country-state-city/dist/react-country-state-city.css";
+
+@import 'react-dual-listbox/lib/react-dual-listbox.css';
+
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+@import "swiper/css/effect-coverflow";
+@import "swiper/css/thumbs";
+@import "swiper/css/effect-flip";
+@import "swiper/css/effect-fade";
+@import "swiper/css/effect-cube";
+@import "swiper/css/scrollbar";
+@import "swiper/css/free-mode";
+
+
+@import "filepond/dist/filepond.min.css";
+@import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css";
+
+@import 'yet-another-react-lightbox/plugins/thumbnails.css';
+@import "yet-another-react-lightbox/styles.css";
+
+@import "@simonwep/pickr/dist/themes/classic.min.css";
+@import "@simonwep/pickr/dist/themes/monolith.min.css";
+@import "@simonwep/pickr/dist/themes/nano.min.css";
+
+@import 'shepherd.js/dist/css/shepherd.css';
+
+.no-wrap {
+  white-space: nowrap;
+}

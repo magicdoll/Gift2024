@@ -1,0 +1,843 @@
+.switcher-backdrop {
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    position: fixed;
+    z-index: 999;
+    opacity: 0.5;
+  }
+  .authentication-tabs {
+    background: rgba(234, 243, 241, 0.5);
+    border-radius: 8px;
+    display: inline-flex !important;
+    justify-content: center !important;
+    margin: 25px auto 0px;
+    overflow: hidden;
+    padding: 8px 9px;
+    width: auto;
+    .nav-item a {
+      padding: 8px 10px;
+    }
+  }
+  //Rangeslider
+
+  #primary-colored-slider{
+    .MuiSlider-root.MuiSlider-colorPrimary,.MuiSlider-thumb.MuiSlider-thumbSizeMedium.MuiSlider-thumbColorPrimary{
+      color: $primary;
+    }
+  }
+  #secondary-colored-slider{
+    .MuiSlider-root.MuiSlider-colorSecondary,.MuiSlider-thumb.MuiSlider-thumbSizeMedium.MuiSlider-thumbColorSecondary{
+      color: $secondary !important;
+    }
+  }
+  #warning-colored-slider{
+    .MuiSlider-rail,.MuiSlider-track,.MuiSlider-thumb{
+      color: $warning;
+    }
+  }
+  #info-colored-slider{
+    .MuiSlider-rail,.MuiSlider-track,.MuiSlider-thumb{
+      color: $info;
+    }
+  }
+  #success-colored-slider{
+    .MuiSlider-rail,.MuiSlider-track,.MuiSlider-thumb{
+      color: $success;
+    }
+  }
+  #danger-colored-slider{
+    .MuiSlider-rail,.MuiSlider-track,.MuiSlider-thumb{
+      color: $danger;
+    }
+  }
+  .MuiTypography-root {
+  font-family: $default-font-family !important;
+  }
+.Mui-active {
+  .MuiStepIcon-root {
+    &.MuiSvgIcon-fontSizeMedium {
+      color: var(--primary-color) !important;
+        box-shadow: 0 0 0 3px var(--primary02) !important;
+        border-radius: 50%;
+    }
+  }
+}
+.MuiStepIcon-text {
+  display: none;
+}
+
+.no-caret::after {
+  display: none;
+}
+.input-group {
+  .react-datepicker__input-container input {
+    border-start-start-radius: 0 !important;
+    border-end-start-radius: 0 !important;
+  }
+}
+.react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle {
+  stroke: $default-border !important;
+}
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected {
+  background-color: $primary-02 !important;
+}
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  ul.react-datepicker__time-list
+  li.react-datepicker__time-list-item--selected {
+  background: $primary !important;
+}
+.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle {
+  fill: $default-border !important;
+  color: $default-border !important;
+  stroke: transparent !important;
+}
+
+.react-datepicker-wrapper {
+  display: block!important;
+}
+.react-datepicker__input-container input {
+  position: relative;
+  flex: 1 1 auto;
+  width: 100%;
+  min-width: 0;
+  height: 36px;
+  border-radius: 0.35rem;
+  border: 1px solid var(--default-border)!important;
+  background-color: var(--form-control-bg);
+  color: var(--default-text-color);
+  padding: 0.375rem 0.75rem;
+}
+.react-datepicker,.react-datepicker__header{
+  background-color: $custom-white !important;
+  color: $default-text-color !important;
+  border-color: $default-border !important;
+
+}
+.react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker-year-header,
+.react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name{
+  color: $default-text-color !important;
+}
+.react-datepicker__time-list{
+  background-color: $custom-white !important;
+}
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item:hover,
+.react-datepicker__day:hover, .react-datepicker__month-text:hover, .react-datepicker__quarter-text:hover, .react-datepicker__year-text:hover{
+  background-color: $light !important;
+  color: $default-text-color !important;
+}
+.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, 
+.react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected,
+ .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--selected, 
+ .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--in-range{
+  background-color: $primary !important;
+  color: #fff !important;
+}
+.react-datepicker__input-container input:focus-visible{
+  outline: 0px;
+}
+.input-group{
+  flex-wrap: inherit;
+}
+.order-track-accordion {
+  .accordion-button {
+    // display: none;
+    padding: 0;
+    background-color: $custom-white;
+    &::after {
+      display: none;
+    }
+  }
+}
+
+  
+  .sun-editor .se-toolbar{
+    background-color: $custom-white !important;
+    outline: 1px solid $default-border !important;
+  }
+  .sun-editor {
+    border-color: $default-border !important;
+    background-color: $custom-white !important;
+  }
+  .sun-editor .se-resizing-bar {
+    background-color: $custom-white !important;
+    border-top: $default-border !important;
+  }
+  .sun-editor .se-btn-module-border {
+    border: 1px solid $default-border !important;
+  }
+  .sun-editor button,
+  .sun-editor-editable {
+    color: $default-text-color !important;
+  }
+  .sun-editor .se-btn:enabled:hover,
+  .sun-editor .se-btn-list.default_value,
+  .sun-editor .se-btn-list:hover,
+  .sun-editor .se-btn:enabled.on {
+    background-color: $custom-white !important;
+  }
+  .sun-editor .se-list-layer {
+    background-color: $custom-white !important;
+    border-color:  $default-border !important;
+    box-shadow: none;
+  }
+  .sun-editor textarea{
+    border-color: $default-border !important; 
+  }
+  .sun-editor-editable {
+    background-color: $custom-white !important;
+  }
+@media (max-width: 991.98px) {
+  [data-toggled="open"] #responsive-overlay {
+      visibility: visible;
+  }
+}
+.allcategory-input-group {
+  .dropdown .btn.show {
+    color: $default-text-color;
+    border: 0;
+  }
+  .btn:first-child:active {
+    border:0;
+  }
+}
+.custom-breadcrumb ol {
+  margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  #mixed-multiple-y .apexcharts-title-text {
+    display: none;
+  }
+}
+.responsive-datatable {
+  table th {
+      padding: .5rem 1.5rem;
+      text-align: start;
+      font-size: .75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 1.462;
+  }
+
+  table td {
+      padding: 1rem 1.5rem;
+      font-size: .875rem;
+      font-weight: 500;
+      text-align: start;
+  }
+
+  table tr {
+      border-color: var(--default-border) !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .d-sm-flex {
+      display: flex !important;
+  }
+
+  ;
+}
+
+#switcher-canvas {
+  .nav-tabs .nav-link {
+      border-radius: 0 !important;
+  }
+
+  .nav-item {
+      margin: 0;
+  }
+
+  .nav-link.active {
+      color: rgb(254, 84, 84);
+      background-color: rgba(254, 84, 84, 0.2);
+      border-color: transparent;
+  }
+}
+
+.MuiRating-icon.MuiRating-iconEmpty {
+  color: var(--default-text-color) !important;
+}
+
+.rdl-filter,
+.rdl-control {
+  border-color: var(--default-border) !important;
+  color: var(--default-text-color) !important;
+}
+
+.rti--container {
+  background-color: var(--custom-white) !important;
+  border-color: var(--default-border) !important;
+}
+
+.rti--tag {
+  background-color: rgb(var(--light-rgb)) !important;
+}
+
+.yarl__slide_image {
+
+  border-radius: 0.3rem !important;
+}
+
+.ordertrack-accordion {
+  .accordion {
+      .accordion-button:after {
+          display: none;
+      }
+  }
+}
+
+#canada-map,
+#lines-map,
+#marker-image-map,
+#marker-map,
+#russia-map,
+#spain-map,
+#us-map,
+#vector-map {
+  height: 20rem;
+}
+
+.rsm-svg {
+  height: 270px;
+  width: 100%;
+}
+
+.progress-custom .progress-bar:before {
+  content: "50%";
+  width: 1.875rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  border-radius: .188rem;
+  background: inherit;
+  box-shadow: 0 .313rem .313rem rgba(0, 0, 0, .4);
+  font-size: .625rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  inset-block-end: 0.8rem;
+  inset-inline-end: -0.888rem;
+}
+
+.svg-breadcrumb {
+  .breadcrumb-item+.breadcrumb-item::before {
+      float: left;
+      padding-right: var(--bs-breadcrumb-item-padding-x);
+      color: var(--bs-breadcrumb-divider-color);
+      content: var(--bs-breadcrumb-divider, ">") !important;
+  }
+}
+
+//styles//
+#top-categories {
+  .apexcharts-legend-marker {
+      width: 7px !important;
+      height: 7px !important;
+
+      svg {
+          border-radius: 50% !important;
+      }
+  }
+}
+
+.ordertrack-accordion {
+  .accordion-button {
+      padding-inline: 0px !important;
+  }
+}
+
+.popular-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.stdropdown-container input {
+  border: 0px !important;
+  background-color: var(--custom-white) !important;
+}
+
+.stdropdown-container,
+.PhoneInputInput {
+  background-color: var(--custom-white) !important;
+}
+
+.wizard-tab {
+  .MuiBox-root {
+      margin-inline-start: auto;
+  }
+}
+
+.MuiRating-icon.MuiRating-iconEmpty {
+  color: var(--text-muted) !important;
+}
+
+[data-theme-mode="dark"] {
+  .form-check-input {
+      border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  }
+}
+
+[data-nav-layout="vertical"][data-nav-style="icon-hover"][data-toggled="icon-hover-closed"] {
+  .app-sidebar .slide.has-sub .slide-menu.child1 {
+      inset-inline-start: 5rem !important;
+  }
+}
+
+[data-nav-layout="vertical"][data-nav-style="icon-click"][data-toggled="icon-click-closed"] {
+  .app-sidebar .slide.has-sub .slide-menu.child1 {
+      inset-inline-start: 5rem !important;
+  }
+}
+
+.nav .nav-tabs {
+  border-bottom: 0px;
+}
+
+[dir="rtl"] {
+  .form-select {
+      padding: 0.375rem 0.75rem 0.375rem 2.25rem;
+  }
+
+  .category-dropdown-wrapper {
+      .dropdown-menu {
+          inset: 0px 0px auto auto;
+      }
+  }
+}
+
+
+.stdropdown-menu::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--light-rgb)) !important;
+}
+
+.stdropdown-menu::-webkit-scrollbar-track {
+  background-color: rgb(var(--light-rgb)) !important;
+}
+
+@media (max-width: 330px) {
+  .sun-editor .se-wrapper .se-wrapper-wysiwyg {
+      border-bottom: 1px solid var(--default-border);
+  }
+}
+
+.sun-editor input:focus,
+.sun-editor select:focus,
+.sun-editor textarea:focus {
+  box-shadow: none !important;
+}
+
+// [data-theme-mode="dark"] {
+//     .form-control,
+//     .Select2__control {
+//         border: 1px solid rgba(255, 255, 255, 0.1) !important;
+//     }
+// }
+
+.tooltip {
+  width: auto !important;
+}
+
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before, .bs-tooltip-top .tooltip-arrow::before {
+  top: -1px;
+  inset-inline-start: 25%;
+}
+
+@media (max-width: 991.98px) {
+  .landing-body .ecommerce-brand-header.sticky.sticky-pin {
+      width: 100%;
+      position: fixed;
+      inset-block-start: 0;
+      background-color: var(--custom-white);
+      z-index: 11;
+      box-shadow: 0px 2px 0px rgba(118, 138, 254, 0.05);
+  }
+}
+
+
+
+.apexcharts-menu {
+  .apexcharts-menu-item {
+      &:hover {
+          background-color: rgb(var(--light-rgb)) !important;
+      }
+  }
+}
+
+.sun-editor .se-resizing-bar {
+  display: none;
+}
+
+.sun-editor .se-wrapper .se-wrapper-wysiwyg {
+  min-height: auto !important;
+  max-height: 150px !important;
+  height: 170px !important;
+}
+
+@media (max-width: 600px) {
+  .sun-editor .se-wrapper .se-wrapper-wysiwyg {
+      min-height: auto !important;
+      max-height: 50px !important;
+  }
+
+  .sun-editor .se-wrapper {
+      height: 50px !important;
+  }
+}
+
+.rodal,
+.rodal-mask {
+  z-index: 103;
+}
+
+.rodal-dialog {
+  z-index: 103;
+}
+
+.navbar-light {
+
+  .btn-check:checked+.btn,
+  .btn.active,
+  .btn.show,
+  .btn:first-child:active,
+  :not(.btn-check)+.btn:active {
+      border-color: rgba(255, 255, 255, 0.1) !important;
+  }
+}
+
+#switcher-canvas #switcher-main-tab button.nav-link {
+  color: var(--danger-rgb) !important;
+}
+
+#switcher-canvas {
+
+  .nav-link:focus,
+  .nav-link:hover {
+      color: var(--danger-rgb) !important;
+  }
+}
+
+.ecommerce-blog-description {
+  max-height: 17rem;
+  overflow: auto;
+}
+
+
+.tooltip {
+  z-index: 99999 !important;
+}
+
+.custom-height1 {
+  height: .6rem;
+  overflow: visible;
+}
+
+.podcast-playing-progress {
+  .progress-custom .progress-bar:before {
+      display: none;
+  }
+}
+
+/// Full Calendar
+.fc-col-header {
+  width: 100% !important;
+}
+
+.fc-daygrid-body.fc-daygrid-body-balanced {
+  width: 100% !important;
+}
+
+.fc-scrollgrid-sync-table {
+  width: 100% !important;
+}
+
+.fc .fc-daygrid-body {
+  width: 100% !important;
+}
+
+.fc-scrollgrid-sync-table,
+.fc-view-harness.fc-view-harness-active {
+  height: 845px !important;
+}
+
+.swiper-wrapper .swiper-slide img {
+  border-radius: 0.5rem;
+}
+
+.fc .fc-daygrid-event-harness-abs {
+  visibility: visible;
+}
+
+.fc .fc-daygrid-event {
+  margin-top: 10px !important;
+}
+
+.fc-col-header {
+  width: 100% !important;
+}
+
+.fc-daygrid-body.fc-daygrid-body-balanced {
+  width: 100% !important;
+}
+
+.fc-scrollgrid-sync-table {
+  width: 100% !important;
+}
+
+.fc .fc-daygrid-body {
+  width: 100% !important;
+}
+
+.fc-scrollgrid-sync-table,
+.fc-view-harness.fc-view-harness-active {
+  height: 845px !important;
+}
+
+.fc .fc-daygrid-event-harness-abs {
+  visibility: visible ;
+}
+
+.fc .fc-daygrid-event {
+  margin-top: 10px !important;
+}
+
+//   react-select-4-listbox
+.breadcrumb .breadcrumb-item.noActive a {
+  color: rgb(0, 0, 0) !important;
+}
+
+.basic-multi-select.form-control-light .Select2__control {
+  background-color: var(--light-rgb) !important;
+}
+
+[data-theme-mode=dark] .breadcrumb-item.noActive a {
+  color: hsla(0, 0%, 100%, .8) !important;
+}
+
+.assignedto-select {
+  .Select2__menu-list.Select2__menu-list--is-multi.Select2__menu-list--is-multi {
+      max-height: 218px !important;
+  }
+}
+
+#chart-year {
+  .apexcharts-canvas .apexcharts-toolbar {
+      display: none;
+  }
+}
+
+.apexcharts-canvas .apexcharts-series-markers.apexcharts-series-bubble path {
+  stroke: var(--custom-white);
+}
+
+#contacts-source {
+  .apexcharts-pie text {
+      fill: var(--default-text-color) !important;
+  }
+}
+
+.order-track-accordion.order-track {
+  .accordion-button {
+      display: block;
+  }
+}
+
+.breadcrumb .breadcrumb-item.noActive a {
+  color: #000 !important;
+}
+
+[data-theme-mode="dark"] {
+  .sun-editor .se-arrow.se-arrow-up:after {
+      border-bottom-color: #000 !important;
+  }
+
+  .sun-editor .se-controller .se-btn-group {
+      background: #000 !important;
+  }
+}
+
+[data-theme-mode="dark"] {
+  .breadcrumb-item.noActive a {
+      color: hsla(0, 0%, 100%, .8) !important;
+  }
+}
+
+#search-modal .Select2__indicator svg,
+.Select2__indicator svg {
+  display: none !important;
+}
+
+#blog-tags1 {
+  .Select2__clear-indicator {
+      svg {
+          display: none !important;
+      }
+  }
+}
+
+.Select2__dropdown-indicator:after {
+  pointer-events: none !important;
+  position: absolute !important;
+  inset-inline-end: 11.5px !important;
+  top: 50% !important;
+  margin-top: -2.5px !important;
+  height: 0 !important;
+  width: 0 !important;
+  content: "" !important;
+  border: 5px solid transparent !important;
+  border-top: 5px solid var(--text-muted) !important;
+}
+
+
+//styles///
+
+[dir="rtl"] {
+  .ecommercedropdown {
+      inset: 0px 0px auto auto !important;
+  }
+}
+
+[dir="rtl"] {
+  .stdropdown-menu {
+      .stdropdown-item {
+          span {
+              display: inline-flex;
+          }
+      }
+  }
+}
+
+.form-select {
+  option {
+      margin: 2px;
+  }
+}
+
+[dir="rtl"] {
+  .form-floating {
+      .form-select {
+          padding: 0.375rem 0.95rem 0.375rem 2.25rem;
+      }
+  }
+  // .top-collectors {
+  //     .ri-arrow-right-s-line {
+  //         rotate: 0deg;
+  //     }
+  // }
+  .bx-left-arrow-alt,.ri-arrow-right-s-line {
+      rotate: 180deg;
+  }
+  .form-select.is-invalid:not([multiple]):not([size]){
+      background-position: left 0.75rem center, center right 2.25rem;
+  }
+  @media (min-width: 992px) {
+      .landing-body .input-group.group-search .categorydropdown3 {
+          line-height: 2.05 !important;
+          border-radius: 0rem 0.3rem 0.3rem 0rem;
+      }
+  }
+  .fe-arrow-right{
+      display: inline-flex;
+      rotate: 180deg;
+  }
+}
+
+.wizard-tab {
+  .MuiBox-root {
+      width: 100% !important;
+  }
+}
+
+.project-list-main .Select2__control {
+  width: 150px !important;
+}
+.fc-event {
+  overflow: hidden;
+}
+
+[data-theme-mode="dark"]{
+  .landing-body{
+      .app-sidebar{
+          .side-menu__item{
+          &:hover{
+              &:before{
+                  color: var(--primary-color) !important;
+              } 
+          }
+         }
+      }
+  }
+}
+
+.react-select__multi-value__remove, .Select2__multi-value__remove{
+  &:hover{
+      background-color: var(--primary-color) !important;
+      color: #fff !important;
+  }
+}
+
+.rdl-icons-fa5 .rdl-icon-move-all-to-selected::before, .rdl-icons-fa6 .rdl-icon-move-all-to-selected::before {
+  content: "" !important;
+  font-family: tabler-icons !important;
+}
+.rdl-icons-fa5 .rdl-icon-move-to-selected::before, .rdl-icons-fa6 .rdl-icon-move-to-selected::before {
+  content: "" !important;
+  font-family: tabler-icons !important;
+}
+.rdl-icons-fa5 .rdl-icon-move-to-available::before, .rdl-icons-fa6 .rdl-icon-move-to-available::before {
+  content: "" !important;
+  font-family: tabler-icons !important;
+}
+
+.rdl-icons-fa5 .rdl-icon-move-all-to-available::before, .rdl-icons-fa6 .rdl-icon-move-all-to-available::before {
+  content: "" !important;
+  font-family: tabler-icons !important;   
+}
+
+[data-nav-layout="vertical"]{
+   .app-sidebar .side-menu__item {
+  margin-block: 4px;
+}
+}
+[dir="rtl"]{
+#chart-10,#chart-11,#chart-12,#chart-13{
+.apexcharts-tooltip{
+  right: -104.27px;
+  left: auto !important;
+}
+}
+.sun-editor .se-btn-list>.se-list-icon {
+  margin: -1px 0px 0 10px;
+}
+.sun-editor .se-btn-list {
+  text-align: right;
+}
+}
+.coming-soon-main{
+.input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control, .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select, .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+  margin-inline-end: 0 !important;
+}
+}
+#new-tasks,#todo-tasks,#inprogress-tasks,#inreview-tasks,#completed-tasks {
+  .card.custom-card:last-child {
+      margin-bottom: 0;
+  }
+}
+#new-tasks,#todo-tasks,#inprogress-tasks,#inreview-tasks,#completed-tasks {
+  position: relative;
+  max-height: 35rem;
+  .simplebar-content {
+      padding: 0 1rem 0 0 !important;
+  }
+}
+
+.react-datepicker__time-container {
+  border-left: 1px solid var(--default-border);
+}
