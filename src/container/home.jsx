@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState } from 'react'
-import { Button, Card, Col, Dropdown, Pagination, ProgressBar, Row, Table } from "react-bootstrap"
+import { Button, Card, Col, Dropdown, Pagination, ProgressBar, Row, Table, Container } from "react-bootstrap"
 import ReactApexChart from "react-apexcharts"
 import { Link } from 'react-router-dom'
 import Imagesdata from '../components/common/imagesdata'
@@ -154,8 +154,10 @@ const Home = () => {
 
   return (
     <Fragment>
+			<Container fluid>
+
       <Row>
-				<Col xs={12} md={6} xxl={6} className={`mb-0 ${isApprove ? 'd-none' : ''}`}>
+				<Col xs={12} md={6} xl={6} xxl={6} className={`mb-0 ${isApprove ? 'd-none' : ''}`}>
 					<Card className="custom-card bg-primary-gradient border-0 shadow-none">
 						<Card.Body className="p-4">
 							<div className="text-center">
@@ -172,7 +174,7 @@ const Home = () => {
 						</Card.Body>
 					</Card>
         </Col>
-        <Col xs={12} md={6} xxl={6} className={`mb-0 ${isApprove ? '' : 'd-none'}`}>
+        <Col xs={12} md={6} xl={6} xxl={6} className={`mb-0 ${isApprove ? '' : 'd-none'}`}>
 					<Card className="custom-card bg-primary-gradient border-0 shadow-none">
 						<Card.Body className="p-4">
 							<div className="d-flex align-items-start gap-3 mb-4">
@@ -212,7 +214,7 @@ const Home = () => {
 						</Card.Body>
 					</Card>
         </Col>
-        <Col xs={12} md={6} xxl={6} className={`mb-0 mt-0 ${isApprove ? '' : 'd-none'}`}>
+        <Col xs={12} md={6} xl={6} xxl={6} className={`mb-0 mt-0 ${isApprove ? '' : 'd-none'}`}>
 					<Card className="custom-card">
 						<Card.Header>
 							<Card.Title>
@@ -246,6 +248,7 @@ const Home = () => {
 					</Card>
         </Col>
       </Row>
+			</Container>
     </Fragment>
   )
 }
