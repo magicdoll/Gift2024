@@ -155,7 +155,7 @@ const Home = () => {
   return (
     <Fragment>
       <Row>
-				<Col xxl={6} className={`mb-0 ${isApprove ? 'd-none' : ''}`}>
+				<Col xs={12} md={6} xxl={6} className={`mb-0 ${isApprove ? 'd-none' : ''}`}>
 					<Card className="custom-card bg-primary-gradient border-0 shadow-none">
 						<Card.Body className="p-4">
 							<div className="text-center">
@@ -172,7 +172,7 @@ const Home = () => {
 						</Card.Body>
 					</Card>
         </Col>
-        <Col xxl={6} className={`mb-0 ${isApprove ? '' : 'd-none'}`}>
+        <Col xs={12} md={6} xxl={6} className={`mb-0 ${isApprove ? '' : 'd-none'}`}>
 					<Card className="custom-card bg-primary-gradient border-0 shadow-none">
 						<Card.Body className="p-4">
 							<div className="d-flex align-items-start gap-3 mb-4">
@@ -212,7 +212,7 @@ const Home = () => {
 						</Card.Body>
 					</Card>
         </Col>
-        <Col xxl={6} className={`mb-0 mt-0 ${isApprove ? '' : 'd-none'}`}>
+        <Col xs={12} md={6} xxl={6} className={`mb-0 mt-0 ${isApprove ? '' : 'd-none'}`}>
 					<Card className="custom-card">
 						<Card.Header>
 							<Card.Title>
